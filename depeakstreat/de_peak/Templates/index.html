@@ -1,0 +1,363 @@
+{% extends 'master.html' %}
+{% block content %}
+{% load static %}
+
+
+
+<main>
+
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-5 col-12 m-auto">
+                    <div class="heroText">
+
+                        <h1 class="text-white mb-lg-5 mb-3">Cakes</h1>
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-12">
+                    <div id="carouselExampleCaptions" class="carousel carousel-fade hero-carousel slide"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-image-wrap">
+                                    <img src="{% static 'images/slide/cupcake.jpeg' %}" class="img-fluid carousel-image"
+                                        alt="">
+                                </div>
+
+                                <div class="carousel-caption">
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="hero-text">Cupcakes</h4>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="carousel-item">
+                                <div class="carousel-image-wrap">
+                                    <img src="{% static 'images/slide/yoghurt.jpg' %}" class="img-fluid carousel-image"
+                                        alt="">
+                                </div>
+
+                                <div class="carousel-caption">
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="hero-text">Yoghurt</h4>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image-wrap">
+                                    <img src="{% static 'images/slide/cookies.jpg' %}" class="img-fluid carousel-image"
+                                        alt="">
+                                </div>
+
+                                <div class="carousel-caption">
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="hero-text">Cookies</h4>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image-wrap">
+                                    <img src="{% static 'images/slide/parfait.jpeg' %}" class="img-fluid carousel-image"
+                                        alt="">
+                                </div>
+
+                                <div class="carousel-caption">
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="hero-text">Parfait</h4>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="display:flex;z-index: -100;">
+            <img src="{% static 'images/slide/cakes.jpg'%}" alt="cake picture">
+            <!-- <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                        <source src="video/production_ID_3769033.mp4" type="video/mp4">
+                        	Your browser does not support the video tag.
+                    	</video> -->
+        </div>
+
+
+    </section>
+
+    <section class="menu section-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <h2 class="text-center mb-lg-5 mb-4">Special Treats</h2>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="menu-thumb">
+                        <div class="menu-image-wrap">
+                            <img src="{% static 'images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg'%}"
+                                class="img-fluid news-image" alt="">
+
+                            <span class="menu-tag bg-warning">Cakes</span>
+                        </div>
+
+                        <div class="menu-info d-flex flex-wrap align-items-center">
+                            <h4 class="mb-0">Wedding Cakes</h4>
+
+                            <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>12.50</span> <a
+                                href="www.google.com"><span class="price-tag bg-white shadow-lg ms-4"><small><i
+                                            class="fa-brands fa-whatsapp fa-beat"
+                                            style="color: #31ce12;"></i></small></span></a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="menu-thumb">
+                        <div class="menu-image-wrap">
+                            <img src="{% static 'images/lunch/farhad-ibrahimzade-MGKqxm6u2bc-unsplash.jpg' %}"
+                                class="img-fluid news-image" alt="">
+
+                            <span class="menu-tag bg-warning">Cookies</span>
+                        </div>
+
+                        <div class="menu-info d-flex flex-wrap align-items-center">
+                            <h4 class="mb-0">chocolate cookies</h4>
+
+                            <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>24.50</span>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="menu-thumb">
+                        <div class="menu-image-wrap">
+                            <img src="{% static 'images/dinner/keriliwi-c3mFafsFz2w-unsplash.jpg' %}"
+                                class="img-fluid news-image" alt="">
+
+                            <span class="menu-tag bg-warning">Parfait</span>
+                        </div>
+
+                        <div class="menu-info d-flex flex-wrap align-items-center">
+                            <h4 class="mb-0">Premium Parfait</h4>
+
+                            <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>45</span>
+
+                            <del class="ms-4"><small>$</small>150</del>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="menu-thumb">
+                        <div class="menu-image-wrap">
+                            <img src="{% static 'images/dinner/farhad-ibrahimzade-ZipYER3NLhY-unsplash.jpg' %}"
+                                class="img-fluid news-image" alt="">
+
+                            <span class="menu-tag bg-warning">Cakes</span>
+                        </div>
+
+                        <div class="menu-info d-flex flex-wrap align-items-center">
+                            <h4 class="mb-0">Birthday Cakes</h4>
+
+                            <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>86</span>
+
+                            <del class="ms-4"><small>$</small>124</del>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="menu-thumb">
+                        <div class="menu-image-wrap">
+                            <img src="{% static 'images/breakfast/louis-hansel-dphM2U1xq0U-unsplash.jpg' %}"
+                                class="img-fluid news-image" alt="">
+
+                            <span class="menu-tag bg-warning">Pastries</span>
+                        </div>
+
+                        <div class="menu-info d-flex flex-wrap align-items-center">
+                            <h4 class="mb-0">Burger</h4>
+
+                            <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>20.50</span>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="menu-thumb">
+                        <div class="menu-image-wrap">
+                            <img src="{% static 'images/lunch/farhad-ibrahimzade-D5c9ZciQy_I-unsplash.jpg' %}"
+                                class="img-fluid news-image" alt="">
+
+                            <span class="menu-tag bg-warning">Confectionaries</span>
+                        </div>
+
+                        <div class="menu-info d-flex flex-wrap align-items-center">
+                            <h4 class="mb-0">Sausage</h4>
+
+                            <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>34.20</span>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="BgImage"></section>
+
+    <section class="news section-padding">
+        <div class="container">
+            <div class="row">
+
+                <h2 class="text-center mb-lg-5 mb-4">News &amp; Events</h2>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="news-thumb mb-4">
+                        <a href="news-detail.html">
+                            <img src="{% static 'images/news/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg' %}"
+                                class="img-fluid news-image" alt="">
+                        </a>
+
+                        <div class="news-text-info news-text-info-large">
+                            <span class="category-tag bg-danger">Featured</span>
+
+                            <h5 class="news-title mt-2">
+                                <a href="news-detail.html" class="news-title-link">Healthy Lifestyle and happy living
+                                    tips</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="news-thumb mb-4">
+                        <a href="news-detail.html">
+                            <img src="{% static 'images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg' %}"
+                                class="img-fluid news-image" alt="">
+                        </a>
+
+                        <div class="news-text-info news-text-info-large">
+                            <span class="category-tag bg-danger">Featured</span>
+
+                            <h5 class="news-title mt-2">
+                                <a href="news-detail.html" class="news-title-link">How to make a healthy meal</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="news-thumb mb-lg-0 mb-lg-4 mb-0">
+                        <a href="news-detail.html">
+                            <img src="{% static 'images/news/gilles-lambert-S_LhjpfIdm4-unsplash.jpg' %}"
+                                class="img-fluid news-image" alt="">
+                        </a>
+
+                        <div class="news-text-info">
+                            <span class="category-tag me-3 bg-info">Promotions</span>
+
+                            <strong>8 April 2022</strong>
+
+                            <h5 class="news-title mt-2">
+                                <a href="news-detail.html" class="news-title-link">Is Coconut good for you?</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="news-thumb mb-lg-0 mb-lg-4 mb-2">
+                        <a href="news-detail.html">
+                            <img src="{% static 'images/news/caroline-attwood-bpPTlXWTOvg-unsplash.jpg' %}"
+                                class="img-fluid news-image" alt="">
+                        </a>
+
+                        <div class="news-text-info">
+                            <span class="category-tag">News</span>
+
+                            <h5 class="news-title mt-2">
+                                <a href="news-detail.html" class="news-title-link">Salmon Steak Noodle</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="news-thumb mb-4">
+                        <a href="news-detail.html">
+                            <img src="{% static 'images/news/louis-hansel-GiIiRV0FjwU-unsplash.jpg' %}"
+                                class="img-fluid news-image" alt="">
+                        </a>
+
+                        <div class="news-text-info">
+                            <span class="category-tag me-3 bg-info">Meeting</span>
+
+                            <strong>30 April 2022</strong>
+
+                            <h5 class="news-title mt-2">
+                                <a href="news-detail.html" class="news-title-link">Making a healthy salad</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+
+
+{% endblock %}
